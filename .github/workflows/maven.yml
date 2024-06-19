@@ -29,7 +29,7 @@ jobs:
         cache: maven
         
     - name: install maven
-      run: sudo apt-get update && sudo apt install maven
+      run: sudo apt-get update && sudo apt install maven -y
     - name: Build with Maven
       run: mvn clean install
 
